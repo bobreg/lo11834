@@ -25,7 +25,7 @@ private:
                         // функции analyze_answer() которая
                         //вызывается после запроса из drivecells
     int request_status[5] = {0x7e, 0x5f, 0x01, 0x9f, 0x7e};
-    QByteArray answer95 = QByteArrayLiteral("\x7e\x5f\x01\xff\xff\xa1\x7e");
+    QByteArray answer95 = QByteArrayLiteral("\x7e\x5f\x01\x00\x5d\x42\x7e");
     QByteArray request;
 };
 

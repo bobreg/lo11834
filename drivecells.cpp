@@ -116,6 +116,8 @@ void driveCells::requests_in_process(){
                 cells_19.get_status(i);
                 flag_status_cells_19.insert(i, cells_19.analyze_answer());
             }
+            cell_264.get_status();
+            flag_status_cell_264 = cell_264.analyze_answer();
             // вывод в debug состояния всех опрошенных ячеек
             qDebug() << "статус 81 ячейки: "<< flag_status_cell_81 << "\n";
             qDebug() << "статус 10-х ячеек: "<< flag_status_cell_10_21 << flag_status_cell_10_22 << flag_status_cell_10_23 << "\n";

@@ -5,6 +5,18 @@ d2hk264::d2hk264(QObject *parent) : QObject(parent)
 
 }
 
+void d2hk264::get_status(){
+
+}
+
+bool d2hk264::analyze_answer(){
+    return true;
+}
+
+void d2hk264::received_msg(QByteArray msg){
+    Q_UNUSED(msg);
+}
+
 
 void d2hk264::expand_antenna_ra_264(){
 

@@ -12,6 +12,7 @@
 #include "d2vk023.h"
 #include "d2ag022.h"
 #include "d2pa019.h"
+#include "d2hk264.h"
 #include "mysocket.h"
 
 class driveCells : public QObject
@@ -48,6 +49,7 @@ private:
     d2vk023 cell_23;
     d2ag022 cells_22;
     d2pa019 cells_19;
+    d2hk264 cell_264;
 
     QByteArray answer;
     bool enable_request = true;
@@ -59,6 +61,7 @@ private:
     bool flag_status_cell_81;
     bool flag_status_cell_24;
     bool flag_status_cell_23;
+    bool flag_status_cell_264;
     QMap <char, bool> flag_status_cells_22;
     QMap <char, bool> flag_status_cells_19;
     void requests_in_process();
